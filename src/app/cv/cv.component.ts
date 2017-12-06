@@ -14,8 +14,12 @@ export class CvComponent implements AfterViewInit {
   constructor() { }
 
   ngAfterViewInit() {
-	particlesJS.load('particles-js', 'assets/javascript/particlesJS/particlesjs-config.json');
+	setTimeout(function(){
+		particlesJS.load('particles-js', 'assets/javascript/particlesJS/particlesjs-config.json'); 
+		$('#particles-js').fadeIn(2000);
+	}, 1000);
 	SimpleScrollbar.initAll();
+	$('#fade').fadeIn(2000);
   }
 
 }
