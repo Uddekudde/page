@@ -5,6 +5,7 @@
 
 .svg-wrapper img {
 	margin-top: -80px;
+	animation: svg-loader 2s;
 }
 
 #experience{
@@ -25,6 +26,7 @@
 }
 .title {
 	font-size: 90px;
+	animation: fadein 2s;
 }
 
 .subtitle {
@@ -34,6 +36,36 @@
 .section{
 	font-size: 23px;
 }
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadein-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes svg-loader {
+    from {
+        opacity: 0;
+        max-height: 0px;
+    }
+    to {
+        opacity: 1;
+        max-height: 2500px;
+    }
+}
+
 
 @media only screen and (max-width: 768px){
 	.svg-wrapper img {
