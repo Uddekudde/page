@@ -30,3 +30,18 @@
 .subtitle {
 	font-size: 30px;
 }
+
+.section{
+	font-size: 23px;
+}
+
+@media only screen and (max-width: 768px){
+	.svg-wrapper img {
+		margin-top: 0px;
+	}
+	
+	.title {
+		margin-top: 20px;
+		font-size: 45px;
+	}
+}
